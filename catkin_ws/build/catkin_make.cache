@@ -1,2 +1,0 @@
-fiducials/aruco_detect:fiducials/fiducial_msgs:fiducials/fiducials:openni_camera/openni_camera:openni_camera/openni_description:openni_camera/openni_launch:openni_tracker:skeleton_markers
--DCATKIN_DEVEL_PREFIX=/home/natalia/multi-camera/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/natalia/multi-camera/catkin_ws/install -G Unix Makefiles
