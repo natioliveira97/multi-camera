@@ -1,0 +1,15 @@
+<!-- Run the aruco_detect node -->
+<launch>
+  <!-- namespace for camera input -->
+  <arg name="desired_serial" default="A00363904314053A"/>
+  <arg name="tf_prefix" default=""/>
+  <arg name="camera_frame_id" default="camera"/>
+
+
+  <node pkg="openni_tracker" name="tracker_1" type="openni_tracker" output="screen" respawn="false">
+    <param name="desired_serial" value="$(arg desired_serial)" />
+    <param name="~tf_prefix" value="$(arg tf_prefix)" />
+    <param name="~camera_frame_id" value="$(arg camera_frame_id)"/>
+    <remap from="tf" to="skeleton_tf"/>
+  </node>
+</launch>
